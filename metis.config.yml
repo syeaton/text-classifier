@@ -10,3 +10,4 @@ jobs:
     name: classify-text
     entrypoint: "python classify-text.py --text 'Inside the park?  Pass the peanuts.  He throws a mean heater. I love Wade Boggs.'"
     dependencies: ["b8a4b177-4395-4e2b-802b-20af9fe46fc7"]
+
