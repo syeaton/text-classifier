@@ -24,7 +24,7 @@ vectorizer = TfidfVectorizer(stop_words='english')
 X_train_tfidf = vectorizer.fit_transform(newsgroups_train.data)
 
 # Use a naive bayes classifier to predict targets
-clf = MultinomialNB(alpha=0.01).fit(X_train_tfidf, newsgroups_train.target)
+clf = MultinomialNB(alpha=0.05).fit(X_train_tfidf, newsgroups_train.target)
 X_test_tfidf = vectorizer.transform(newsgroups_test.data)
 news_pred = clf.predict(X_test_tfidf)
 accuracy = metrics.accuracy_score(newsgroups_test.target, news_pred)

@@ -8,5 +8,5 @@ jobs:
   - job_id: a3ff4cd9-ab49-4efb-8340-4c00519b120c
     language: python
     name: classify-text
-    entrypoint: "python classify-text.py --text 'Has anyone seen the world series? The pitchers and batters are really excellent. Lots of stolen bases. I love a world series home run.'"
+    entrypoint: "python classify-text.py --text 'Inside the park?  Pass the peanuts.  He throws a mean heater. I love Wade Boggs.'"
     dependencies: ["b8a4b177-4395-4e2b-802b-20af9fe46fc7"]
